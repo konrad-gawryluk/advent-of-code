@@ -14,7 +14,7 @@ const findCommonLetterWithinWords = ([firstWord, ...otherWords]: string[]) =>
 
 const arrayFromInput = text
 	.split('\n')
-	.filter((text) => text !== '')
+	.filter((line) => line !== '')
 
 const arrayOfCommonLettersFirstStrategy = arrayFromInput
 	.map((line) => [line.substring(0, line.length / 2), line.substring(line.length / 2)])

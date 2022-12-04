@@ -32,7 +32,7 @@ const text = Deno.readTextFileSync(`${__dirname}input.txt`).toString();
 
 const arrayOfArraysFirstStrategy = text
 	.split('\n')
-	.filter((text) => text !== '')
+	.filter((line) => line !== '')
 	.map((line) => line.split(' ')) as ArrayOfArrays
 
 const arrayOfArraysSecondStrategy: ArrayOfArrays = arrayOfArraysFirstStrategy.map(([opponentShape, myShape]) => {
